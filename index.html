@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan A - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        .tab-content:not(.active) {
+            display: none;
+        }
+        .nav-button.active {
+            background-color: #2563eb;
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-4">
+            <div class="flex gap-2 overflow-x-auto">
+                <button onclick="showTab('home')" class="nav-button active px-4 py-2 rounded-lg">
+                    <i data-feather="user" class="w-4 h-4 inline mr-1"></i>
+                    Profile
+                </button>
+                <button onclick="showTab('education')" class="nav-button px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                    <i data-feather="book" class="w-4 h-4 inline mr-1"></i>
+                    Education
+                </button>
+                <button onclick="showTab('certifications')" class="nav-button px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                    <i data-feather="code" class="w-4 h-4 inline mr-1"></i>
+                    Certifications
+                </button>
+                <button onclick="showTab('skills')" class="nav-button px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                    <i data-feather="globe" class="w-4 h-4 inline mr-1"></i>
+                    Skills & Awards
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <!-- Home Page -->
+        <div id="home" class="tab-content active space-y-6">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-8 rounded-xl text-white">
+                <h1 class="text-4xl font-bold mb-4">Karan A</h1>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <i data-feather="phone" class="w-4 h-4"></i>
+                        <span>+91 91590 59182</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="mail" class="w-4 h-4"></i>
+                        <span>kararnarjunan2005@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="map-pin" class="w-4 h-4"></i>
+                        <span>9/62A Bharathi Nagar, Venganur, Perambalur</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="linkedin" class="w-4 h-4"></i>
+                        <span>kararnarjunan</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-4">Profile</h2>
+                <p class="text-gray-600">
+                    Forward-thinking professional with a strong IT background (B.Com IT and DCA), currently pursuing an MBA in Design Thinking. Specializes in research analytics, blending data-driven insights with innovative problem-solving. Aims to leverage IT expertise and design thinking to drive business transformation and innovation.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-4">Project Highlight</h2>
+                <h3 class="text-xl font-medium mb-2">Capital Structure Analysis - Hindustan Unilever Limited</h3>
+                <p class="text-gray-600">
+                    Conducted a comprehensive analysis of Hindustan Unilever Limited's capital structure to evaluate the company's financial leverage and funding strategies. The study examined the optimal balance between debt and equity financing, focusing on maximizing shareholder value while minimizing the cost of capital.
+                </p>
+            </div>
+        </div>
+
+        <!-- Education Page -->
+        <div id="education" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-6">Education</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-medium">Master of Business Administration in Design Thinking</h3>
+                            <span class="text-blue-600">Sept 2024 - Pursuing</span>
+                        </div>
+                        <p class="text-gray-600">SNS College of Technology | Coimbatore</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-medium">Bachelor of Commerce</h3>
+                            <span class="text-blue-600">Jun 2021 - May 2024</span>
+                        </div>
+                        <p class="text-gray-600">Majors: Information Technology</p>
+                        <p class="text-gray-600">CGPA: 7.3 | Kaamadhenu Arts and Science College | Sathyamangalam</p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-medium">Diploma In Computer Application</h3>
+                            <span class="text-blue-600">May 2019 - Feb2020</span>
+                        </div>
+                        <p class="text-gray-600">Grad: A++ | Computer Software College (csc) | Perambalur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Page -->
+        <div id="certifications" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-6">Certifications</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-medium">Digital Business Skills</h3>
+                        <p class="text-gray-600">Issued by: HP Life | Date Obtained: September 09th 2023</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-medium">Data Science & Analytics</h3>
+                        <p class="text-gray-600">Issued by: HP Life | Date Obtained: November 8th 2023</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-medium">Enterprise Design Thinking Practitioner</h3>
+                        <p class="text-gray-600">Issued By: IBM | Obtained on: 17 OCT 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Page -->
+        <div id="skills" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-6">Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Data Analytics</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Figma</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">C++, java</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Technical Writing</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">MS Access</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Power BI</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">VBA</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Cloud shell</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">Wordpress</div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-center">SEO</div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-6">Awards</h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <i data-feather="award" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>Tech Guru of 2024 awarded by Department of Commerce PA and IT, Kaamadenu Arts and Science college</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-feather="award" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>Best Organizer of ICDEDE 2024 awarded by Department of Commerce PA and IT, Kaamadenu Arts and Science College</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-feather="award" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>First Runner up in Spark's 2024 English Oratorical awarded by Kaamadenu Arts and Science College</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-2xl font-semibold mb-6">Publications</h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <i data-feather="file-text" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>Published a paper about Business Intelligence on on National conference organized by Sri Ramakrishna College of Arts and Science</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-feather="file-text" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>Published Paper about Block chain technology and Financial Inclusion on one day international conference organized by Sankara college of science & commerce</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-feather="file-text" class="w-6 h-6 text-blue-600 flex-shrink-0"></i>
+                        <span>Published a paper about Block chain with credentials verification conference organized by Rathinam College of arts and Science college</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Tab switching functionality
+        function showTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Update button styles
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.classList.remove('active');
+                button.classList.add('text-gray-600');
+            });
+            
+            // Add active class to clicked button
+            event.currentTarget.classList.add('active');
+            event.currentTarget.classList.remove('text-gray-600');
+        }
+    </script>
+</body>
+</html>
